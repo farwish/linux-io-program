@@ -1,7 +1,5 @@
-## linux io program
-
+### linux io program
 ===
-
 * touch命令实现: open和close函数
 	(open:打开或创建一个文件, 参数终端手册)
 
