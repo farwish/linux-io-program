@@ -4,8 +4,9 @@
 
 int main(int argc, char* argv[])
 {
-	int fd, wr_ret;
+	int fd, wr_ret, rd_ret;
 	char buf[] = "linux";
+	char read_buf[120] = {0};
 
 	fd = open("./a.c", O_RDWR | O_TRUNC); // 打开文件,如果有内容时删除
 
@@ -17,6 +18,10 @@ int main(int argc, char* argv[])
 
 	wr_ret = write(fd, buf, sizeof(buf));
 	printf("wr_ret=%d\n", wr_ret);
+
+	// 开始读
+	rd_ret = read(fd, read_buf, 128); // 此时是从写入的文件末尾开始读,所以没有内容,需要重新定位
+	printf("read_buf=%d\n", rd_ret);
 
 	close(fd);
 
