@@ -11,6 +11,7 @@ int main(int argc, char* argv[])
 
 	if ( fp == NULL) {
 		printf("create file %s failure\n", argv[1]);
+		return -1;
 	}
 
 	printf("create file %s success\n", argv[1]);
