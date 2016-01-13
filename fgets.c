@@ -7,6 +7,8 @@ int main(int argc, char* argv[])
 {
 	FILE* fp;
 	char buf[] = "hello\n";
+	char readbuf[128] = {0};
+
 	fp = fopen(argv[1], "w+");
 
 	if (fp == NULL) {
@@ -17,7 +19,9 @@ int main(int argc, char* argv[])
 
 	fputs(buf, fp);
 
-	//while(1); 如果buf没有换行符, 运行到这里, argv[1]文件依然没有内容
+	fgets(readbuf, 128, fp); // 最终没有写到readbuf中
+
+	printf("readbuf: %s\n", readbuf);
 
 	fclose(fp);
 
