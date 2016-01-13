@@ -7,3 +7,4 @@
 
 * cp命令实现: 组合使用open,read,write,close 及条件判断
 
+* 标准IO - fopen和fclose
