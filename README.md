@@ -9,3 +9,5 @@
 * 标准IO - fopen和fclose（touch_fopen.c）
 
 * 标准IO - fgets和fputs（fgets.c, fputs.c）
+
+* 标准IO - fflush,无缓存,fseek（fflush.c, fseek.c）
