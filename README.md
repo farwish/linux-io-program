@@ -7,3 +7,5 @@
 * cp命令实现: 组合使用open,read,write,close 及条件判断（cp.c）
 
 * 标准IO - fopen和fclose（touch_fopen.c）
+
+* 标准IO - fgets和fputs（）
