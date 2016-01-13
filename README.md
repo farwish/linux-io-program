@@ -8,4 +8,4 @@
 
 * 标准IO - fopen和fclose（touch_fopen.c）
 
-* 标准IO - fgets和fputs（）
+* 标准IO - fgets和fputs（fgets.c, fputs.c）
