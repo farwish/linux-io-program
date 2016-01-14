@@ -11,3 +11,5 @@
 * 标准IO - fgets和fputs（fgets.c, fputs.c）
 
 * 标准IO - fflush,无缓存,fseek（fflush.c, fseek.c）
+
+* 标准IO - gets,puts,fprintf,sprintf（gets.c）
