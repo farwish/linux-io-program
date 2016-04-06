@@ -19,11 +19,11 @@ int main(int argc, char *argv[])
 	
 	while (1) {
 
+		ret = fgetc(fp); // 放在feof判断前, 否则输出结尾出现乱码
+
 		if (feof(fp)) {
 			break;
 		}
-
-		ret = fgetc(fp);
 
 		fputc(ret, stdout);
 	}
