@@ -15,3 +15,7 @@
 * 标准IO - gets,puts,fprintf,sprintf（gets.c）
 
 * 标准IO - fgetc,fputc（fgetc.c, fputc.c）
+
+* 标准IO - feof, ferror, clearerr ( feof_ferror.c, clearerr.c )
+
+> 查看函数原型和头文件 使用man fopen / man 3 fopen
