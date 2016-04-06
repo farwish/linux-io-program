@@ -18,4 +18,6 @@
 
 * 标准IO - feof, ferror, clearerr ( feof_ferror.c, clearerr.c )
 
+* cat命令实现: 组合使用fgetc, feof, fputc (cat.c)
+
 > 查看函数原型和头文件 使用man fopen / man 3 fopen
