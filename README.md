@@ -1,10 +1,10 @@
 ### linux io program
 ===
-* touch命令实现: open和close函数（touch.c）
+* 文件IO - touch命令实现, open和close函数（touch.c）
 
-* read, write, lseek函数（read.c, write.c, lseek.c）
+* 文件IO - read, write, lseek函数（read.c, write.c, lseek.c）
 
-* cp命令实现: 组合使用open,read,write,close 及条件判断（cp.c）
+* 文件IO - cp命令实现, 组合使用open,read,write,close 及条件判断（cp.c）
 
 * 标准IO - fopen和fclose（touch_fopen.c）
 
@@ -48,3 +48,7 @@ read, write
  readdir						          | read
  rewinddir, telldir, seekdir	| rewind, ftell, fseek
  closedir						          | fclose
+
+* 单机模式下的文件上传和下载
+> 思路: 输入路径和目录, 列出文件\目录, 输入下载的文件名, 使用文件IO进行拷贝, 下载只是路径相反  
+> 总结: 其实都是文件IO,标准IO,目录IO的集合操作  
