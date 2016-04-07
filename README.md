@@ -36,16 +36,15 @@ read, write
 * 动态库制作
 > `gcc -c -o sub.o sub.c`  // 生成 sub.o 目标文件  
 > `gcc -shared -fpic -o libsub.so sub.o`  // -shared生成共享库,-fpic产生位置无关代码  
-> `gcc -o build main.c -L. -lsub`  // 执行./build 报错, 可使用下面两种方式解决
->   // .so 所在路径加入到环境变量 export LD_LIBRARY_PATH=/home/weichen/sub:$LD_LIBRARY_PATH  
->	// .so 所在路径加入到 /etc/ld.so.conf 中, 运行 ldconfig /etc/ld.so.conf 生效
+> `gcc -o build main.c -L. -lsub`  // 执行./build 报错, 可使用下面两种方式解决  
+>  // .so 所在路径加入到环境变量 export LD_LIBRARY_PATH=/home/weichen/sub:$LD_LIBRARY_PATH  
+>	 // .so 所在路径加入到 /etc/ld.so.conf 中, 运行 ldconfig /etc/ld.so.conf 生效
 
-* 目录IO  
-> 目录IO与文件IO函数比较  
+* 目录IO，目录IO与文件IO函数比较  
 
-| 目录IO						| 文件IO
-|--								|--
-| opendir, mkdir				| open
-| readdir						| read
-| rewinddir, telldir, seekdir	| rewind, ftell, fseek
-| closedir						| fclose
+ 目录IO						            | 文件IO
+								          ----|----
+ opendir, mkdir			          |open
+ readdir						          | read
+ rewinddir, telldir, seekdir	| rewind, ftell, fseek
+ closedir						          | fclose
